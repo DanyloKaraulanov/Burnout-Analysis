@@ -1,0 +1,16 @@
+SELECT 
+Region, Work_Arrangement, 
+AVG(
+CASE 
+WHEN Burnout_Level = 'High' THEN 3
+WHEN Burnout_Level = 'Medium' THEN 2
+WHEN Burnout_Level = 'Low' THEN 1
+ELSE NULL END) AS Avg_Burnout_Score,
+ROUND(SUM(CASE WHEN Burnout_Level = 'High' THEN 1 ELSE 0 END) * 100 / COUNT(*), 1) AS PCT_High_Burnout,
+ROUND(SUM(CASE WHEN Burnout_Level = 'Medium' THEN 1 ELSE 0 END) * 100 / COUNT(*), 1) AS PCT_Medium_Burnout,
+ROUND(SUM(CASE WHEN Burnout_Level = 'Low' THEN 1 ELSE 0 END) * 100 / COUNT(*), 1) AS PCT_Low_Burnout,
+AVG(Work_Life_Balance_Score) AS Avg_Balance,
+COUNT(*) AS Count
+FROM sakila.remote_work
+GROUP BY Region, Work_Arrangement
+ORDER BY Region, Work_Arrangement;
