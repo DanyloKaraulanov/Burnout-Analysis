@@ -1,0 +1,385 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Remote Work Health Impact Analysis},
+  pdfauthor={Danylo Karaulanov},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Remote Work Health Impact Analysis}
+\author{Danylo Karaulanov}
+\date{2025-08-15}
+
+\begin{document}
+\maketitle
+
+\begin{verbatim}
+## # A tibble: 6 x 14
+##   Survey_Date   Age Gender Region        Industry      Job_Role Work_Arrangement
+##   <date>      <dbl> <chr>  <chr>         <chr>         <chr>    <chr>           
+## 1 2025-06-01     27 Female Asia          Professional~ Data An~ Onsite          
+## 2 2025-06-01     37 Female Asia          Professional~ Data An~ Onsite          
+## 3 2025-06-01     32 Female Africa        Education     Busines~ Onsite          
+## 4 2025-06-01     40 Female Europe        Education     Data An~ Onsite          
+## 5 2025-06-01     30 Male   South America Manufacturing DevOps ~ Hybrid          
+## 6 2025-06-01     52 Male   Oceania       Customer Ser~ Busines~ Onsite          
+## # i 7 more variables: Hours_Per_Week <dbl>, Mental_Health_Status <chr>,
+## #   Burnout_Level <chr>, Work_Life_Balance_Score <dbl>,
+## #   Physical_Health_Issues <chr>, Social_Isolation_Score <dbl>,
+## #   Salary_Range <chr>
+\end{verbatim}
+
+\section{\texorpdfstring{\textbf{Introduction}}{Introduction}}\label{introduction}
+
+This report analyzes how different work arrangements (remote, hybrid,
+and onsite) affect employee health and burnout based on survey data from
+over 3,000 participants.
+
+The analysis focuses on the following research questions:
+
+\begin{itemize}
+\tightlist
+\item
+  Does work arrangement influence burnout levels? - How do gender, age,
+  and mental health status correlate with burnout? - What practical
+  steps can organizations take to address identified risks?
+\end{itemize}
+
+\section{\texorpdfstring{\textbf{Key
+Findings}}{Key Findings}}\label{key-findings}
+
+\subsection{\texorpdfstring{\textbf{1. Burnout by
+Gender}}{1. Burnout by Gender}}\label{burnout-by-gender}
+
+Analysis shows variation in burnout levels across genders. For example,
+female employees reported slightly higher `High Burnout' percentages in
+remote and onsite settings compared to males. Charts from R analysis
+provide visual confirmation.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{burnout\_by\_gender }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{count}\NormalTok{(Gender, Work\_Arrangement, Burnout\_Level) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(Gender, Work\_Arrangement) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Percentage =}\NormalTok{ n }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(n) }\SpecialCharTok{*} \DecValTok{100}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ungroup}\NormalTok{()}
+\FunctionTok{head}\NormalTok{(burnout\_by\_gender)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+##   Gender Work_Arrangement Burnout_Level     n Percentage
+##   <chr>  <chr>            <chr>         <int>      <dbl>
+## 1 Female Hybrid           High            170       37.4
+## 2 Female Hybrid           Low              79       17.4
+## 3 Female Hybrid           Medium          205       45.2
+## 4 Female Onsite           High            212       27.5
+## 5 Female Onsite           Low             230       29.8
+## 6 Female Onsite           Medium          330       42.7
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(burnout\_by\_gender, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Work\_Arrangement,}
+                              \AttributeTok{y =}\NormalTok{ Percentage,}
+                              \AttributeTok{fill =}\NormalTok{ Burnout\_Level)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_col}\NormalTok{(}\AttributeTok{position =} \StringTok{"dodge"}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{Gender) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{title =} \StringTok{"Burnout Levels by Work Arrangement and Gender"}\NormalTok{,}
+    \AttributeTok{x =} \StringTok{"Work Arrangement"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Percentage (\%)"}\NormalTok{,}
+    \AttributeTok{fill =} \StringTok{"Burnout Level"}
+\NormalTok{  ) }\SpecialCharTok{+} 
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+} 
+  \FunctionTok{scale\_fill\_brewer}\NormalTok{(}\AttributeTok{palette =} \StringTok{"RdYlGn"}\NormalTok{, }\AttributeTok{direction =} \SpecialCharTok{{-}}\DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{45}\NormalTok{, }\AttributeTok{hjust =} \DecValTok{1}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Remote_Work_Analysis_files/figure-latex/unnamed-chunk-2-1.pdf}}
+
+\subsection{\texorpdfstring{\textbf{2. Burnout by Work
+Arrangement}}{2. Burnout by Work Arrangement}}\label{burnout-by-work-arrangement}
+
+Remote workers consistently reported higher burnout than hybrid and
+onsite employees. Hybrid workers had the lowest proportion of
+high-burnout cases.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{burnout\_by\_arrangement }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(Work\_Arrangement, Burnout\_Level) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{Count =} \FunctionTok{n}\NormalTok{()) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Percentage =}\NormalTok{ (Count }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(Count)) }\SpecialCharTok{*} \DecValTok{100}\NormalTok{)}
+\FunctionTok{head}\NormalTok{(burnout\_by\_arrangement)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 4
+## # Groups:   Work_Arrangement [2]
+##   Work_Arrangement Burnout_Level Count Percentage
+##   <chr>            <chr>         <int>      <dbl>
+## 1 Hybrid           High            360       35.7
+## 2 Hybrid           Low             193       19.2
+## 3 Hybrid           Medium          454       45.1
+## 4 Onsite           High            413       26.4
+## 5 Onsite           Low             471       30.2
+## 6 Onsite           Medium          678       43.4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(burnout\_by\_arrangement,}
+       \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Work\_Arrangement, }\AttributeTok{y =}\NormalTok{ Percentage, }\AttributeTok{fill =}\NormalTok{ Burnout\_Level)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_col}\NormalTok{(}\AttributeTok{width =} \FloatTok{0.6}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{scale\_fill\_manual}\NormalTok{(}\AttributeTok{values =} \FunctionTok{c}\NormalTok{(}\StringTok{"Low"} \OtherTok{=} \StringTok{"\#A6D8A0"}\NormalTok{, }\StringTok{"Medium"} \OtherTok{=} \StringTok{"\#F9CB8F"}\NormalTok{, }\StringTok{"High"} \OtherTok{=} \StringTok{"\#F38D8D"}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{x =} \StringTok{"Work Type"}\NormalTok{,}
+    \AttributeTok{y =} \StringTok{"Percentage of Employees"}\NormalTok{,}
+    \AttributeTok{fill =} \StringTok{"Burnout Level"}
+\NormalTok{  ) }\SpecialCharTok{+} 
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+} 
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{panel.grid =} \FunctionTok{element\_blank}\NormalTok{(),}
+    \AttributeTok{axis.text =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{size =} \DecValTok{11}\NormalTok{), }
+    \AttributeTok{legend.position =} \StringTok{"top"}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Remote_Work_Analysis_files/figure-latex/unnamed-chunk-3-1.pdf}}
+
+\subsection{\texorpdfstring{\textbf{3. Mental Health and
+Burnout}}{3. Mental Health and Burnout}}\label{mental-health-and-burnout}
+
+Employees with pre-existing mental health conditions (such as anxiety,
+ADHD, or stress disorders) showed a much higher likelihood of reporting
+`High Burnout.' Visualization confirms the strong overlap between mental
+health challenges and burnout.
+
+\begin{verbatim}
+## # A tibble: 6 x 4
+## # Groups:   Mental_Health_Status [2]
+##   Mental_Health_Status Burnout_Level Count Percentage
+##   <chr>                <chr>         <int>      <dbl>
+## 1 ADHD                 High            119       30.9
+## 2 ADHD                 Low             109       28.3
+## 3 ADHD                 Medium          157       40.8
+## 4 Anxiety              High            136       34.5
+## 5 Anxiety              Low              92       23.4
+## 6 Anxiety              Medium          166       42.1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(mental\_health\_burnout, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Mental\_Health\_Status, }\AttributeTok{y =}\NormalTok{ Percentage, }\AttributeTok{fill =}\NormalTok{ Burnout\_Level)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat =} \StringTok{"identity"}\NormalTok{, }\AttributeTok{position =} \StringTok{"dodge"}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Burnout Levels by Mental Health Status"}\NormalTok{, }\AttributeTok{x =} \StringTok{"Mental Health Condition"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Percentage (\%)"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{45}\NormalTok{, }\AttributeTok{hjust =} \DecValTok{1}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Remote_Work_Analysis_files/figure-latex/unnamed-chunk-4-1.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Age\_Group =} \FunctionTok{case\_when}\NormalTok{(}
+\NormalTok{    Age }\SpecialCharTok{\textless{}} \DecValTok{30} \SpecialCharTok{\textasciitilde{}} \StringTok{"Under 30"}\NormalTok{,}
+\NormalTok{    Age }\SpecialCharTok{\textgreater{}=} \DecValTok{30} \SpecialCharTok{\&}\NormalTok{ Age }\SpecialCharTok{\textless{}} \DecValTok{40} \SpecialCharTok{\textasciitilde{}} \StringTok{"30{-}39"}\NormalTok{,}
+\NormalTok{    Age }\SpecialCharTok{\textgreater{}=} \DecValTok{40} \SpecialCharTok{\&}\NormalTok{ Age }\SpecialCharTok{\textless{}} \DecValTok{50} \SpecialCharTok{\textasciitilde{}} \StringTok{"40{-}49"}\NormalTok{,}
+\NormalTok{    Age }\SpecialCharTok{\textgreater{}=} \DecValTok{50} \SpecialCharTok{\textasciitilde{}} \StringTok{"50+"}
+\NormalTok{  ))}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\textbf{4. Age and
+Burnout}}{4. Age and Burnout}}\label{age-and-burnout}
+
+Burnout levels varied by age group. Younger employees (under 30) had the
+highest proportion of burnout, while workers aged 40+ were less likely
+to report severe burnout. Age bands were grouped as Under 30, 30--39,
+40--49, and 50+ for clarity.
+
+\begin{verbatim}
+## # A tibble: 6 x 4
+## # Groups:   Age_Group [2]
+##   Age_Group Burnout_Level Count Percentage
+##   <chr>     <chr>         <int>      <dbl>
+## 1 30-39     High            256       36.7
+## 2 30-39     Low             149       21.4
+## 3 30-39     Medium          292       41.9
+## 4 40-49     High            230       31.1
+## 5 40-49     Low             180       24.4
+## 6 40-49     Medium          329       44.5
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(burnout\_by\_age, }
+       \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Age\_Group, }
+           \AttributeTok{y =}\NormalTok{ Percentage, }
+           \AttributeTok{fill =}\NormalTok{ Burnout\_Level)) }\SpecialCharTok{+}
+  
+  \FunctionTok{geom\_col}\NormalTok{(}\AttributeTok{width =} \FloatTok{0.6}\NormalTok{, }\AttributeTok{color =} \StringTok{"white"}\NormalTok{, }\AttributeTok{linewidth =} \FloatTok{0.3}\NormalTok{) }\SpecialCharTok{+}  \CommentTok{\# Clean white outlines}
+  
+  \FunctionTok{scale\_fill\_manual}\NormalTok{(}\AttributeTok{values =} \FunctionTok{c}\NormalTok{(}
+    \StringTok{"Low"} \OtherTok{=} \StringTok{"\#7bc8a4"}\NormalTok{,   }
+    \StringTok{"Medium"} \OtherTok{=} \StringTok{"\#ffb347"}\NormalTok{, }
+    \StringTok{"High"} \OtherTok{=} \StringTok{"\#ff6b6b"}    
+\NormalTok{  )) }\SpecialCharTok{+}
+  
+  \FunctionTok{labs}\NormalTok{(}
+    \AttributeTok{x =} \StringTok{"Age Group"}\NormalTok{, }
+    \AttributeTok{y =} \StringTok{"Percentage (\%)"}\NormalTok{,}
+    \AttributeTok{fill =} \StringTok{"Burnout Level"}
+\NormalTok{  ) }\SpecialCharTok{+}
+  
+  \FunctionTok{theme\_minimal}\NormalTok{(}\AttributeTok{base\_size =} \DecValTok{12}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}
+    \AttributeTok{legend.position =} \StringTok{"top"}\NormalTok{,}
+    \AttributeTok{panel.grid.major.x =} \FunctionTok{element\_blank}\NormalTok{(),}
+    \AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{face =} \StringTok{"bold"}\NormalTok{)}
+\NormalTok{  ) }\SpecialCharTok{+}
+  
+  \FunctionTok{geom\_text}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{label =} \FunctionTok{paste0}\NormalTok{(}\FunctionTok{round}\NormalTok{(Percentage), }\StringTok{"\%"}\NormalTok{)),}
+            \AttributeTok{position =} \FunctionTok{position\_stack}\NormalTok{(}\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{),}
+            \AttributeTok{color =} \StringTok{"white"}\NormalTok{,}
+            \AttributeTok{size =} \FloatTok{3.8}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Remote_Work_Analysis_files/figure-latex/unnamed-chunk-5-1.pdf}}
+
+\section{\texorpdfstring{\textbf{Conclusion}}{Conclusion}}\label{conclusion}
+
+The analysis highlights that remote workers and younger employees are
+more at risk of high burnout. Additionally, mental health conditions
+strongly correlate with increased burnout.
+
+\section{**Recommendations:}\label{recommendations}
+
+Based on the findings, organizations should consider the following
+actions:
+
+\begin{itemize}
+\tightlist
+\item
+  Implement targeted wellness programs for remote employees, focusing on
+  reducing screen fatigue.
+\item
+  Provide age-specific support initiatives, such as mentorship for
+  younger staff.
+\item
+  Encourage flexible work arrangements for high-burnout groups.
+\item
+  Offer mental health resources, such as counseling and stress
+  management workshops.
+\item
+  Monitor workload and ensure employees maintain work-life balance.
+\end{itemize}
+
+\end{document}
