@@ -1,0 +1,59 @@
+Gender,Age_Group,Work_Arrangement,Count
+Female,20,Onsite,131
+Female,20,Hybrid,82
+Female,20,Remote,40
+Female,30,Onsite,160
+Female,30,Hybrid,100
+Female,30,Remote,56
+Female,40,Onsite,186
+Female,40,Hybrid,99
+Female,40,Remote,67
+Female,50,Onsite,182
+Female,50,Hybrid,95
+Female,50,Remote,68
+Female,60,Onsite,113
+Female,60,Hybrid,78
+Female,60,Remote,43
+Male,20,Onsite,130
+Male,20,Hybrid,104
+Male,20,Remote,44
+Male,30,Onsite,174
+Male,30,Hybrid,117
+Male,30,Remote,62
+Male,40,Onsite,175
+Male,40,Hybrid,105
+Male,40,Remote,80
+Male,50,Onsite,168
+Male,50,Hybrid,118
+Male,50,Remote,72
+Male,60,Onsite,85
+Male,60,Hybrid,66
+Male,60,Remote,35
+Non-binary,20,Onsite,8
+Non-binary,20,Hybrid,6
+Non-binary,20,Remote,4
+Non-binary,30,Onsite,10
+Non-binary,30,Hybrid,8
+Non-binary,30,Remote,3
+Non-binary,40,Hybrid,9
+Non-binary,40,Onsite,7
+Non-binary,40,Remote,2
+Non-binary,50,Onsite,10
+Non-binary,50,Hybrid,6
+Non-binary,50,Remote,3
+Non-binary,60,Onsite,9
+Non-binary,60,Hybrid,3
+Non-binary,60,Remote,2
+Prefer not to say,20,Hybrid,3
+Prefer not to say,20,Remote,2
+Prefer not to say,20,Onsite,1
+Prefer not to say,30,Onsite,4
+Prefer not to say,30,Remote,2
+Prefer not to say,30,Hybrid,1
+Prefer not to say,40,Onsite,4
+Prefer not to say,40,Hybrid,3
+Prefer not to say,40,Remote,2
+Prefer not to say,50,Hybrid,4
+Prefer not to say,50,Onsite,4
+Prefer not to say,50,Remote,1
+Prefer not to say,60,Onsite,1

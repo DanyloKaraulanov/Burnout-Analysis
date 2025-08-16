@@ -1,0 +1,73 @@
+Job_Role,Work_Arrangement,Avg_Burnout,PCT_High,PCT_Medium,PCT_Low,Total_Count
+Account Manager,Onsite,1.7879,18.18182,42.42424,39.39394,66
+Account Manager,Hybrid,1.9796,24.4898,48.97959,26.53061,49
+Account Manager,Remote,2.1765,41.17647,35.29412,23.52941,17
+Business Analyst,Onsite,2.0484,29.03226,46.77419,24.19355,62
+Business Analyst,Hybrid,2.2826,45.65217,36.95652,17.3913,46
+Business Analyst,Remote,2.1739,34.78261,47.82609,17.3913,23
+Consultant,Onsite,1.8475,16.94915,50.84746,32.20339,59
+Consultant,Hybrid,2.2308,38.46154,46.15385,15.38462,39
+Consultant,Remote,2.4783,56.52174,34.78261,8.69565,23
+Content Writer,Onsite,2.0517,31.03448,43.10345,25.86207,58
+Content Writer,Hybrid,2.1389,33.33333,47.22222,19.44444,36
+Content Writer,Remote,2.1739,30.43478,56.52174,13.04348,23
+Customer Service Manager,Onsite,1.9714,24.28571,48.57143,27.14286,70
+Customer Service Manager,Hybrid,2.0833,31.25,45.83333,22.91667,48
+Customer Service Manager,Remote,2.2692,46.15385,34.61538,19.23077,26
+Data Analyst,Onsite,1.8841,23.18841,42.02899,34.78261,69
+Data Analyst,Hybrid,2.1818,43.18182,31.81818,25,44
+Data Analyst,Remote,2.4,46.66667,46.66667,6.66667,30
+Data Scientist,Onsite,2.0806,35.48387,37.09677,27.41935,62
+Data Scientist,Hybrid,2.2609,36.95652,52.17391,10.86957,46
+Data Scientist,Remote,2.2143,39.28571,42.85714,17.85714,28
+DevOps Engineer,Onsite,1.8765,20.98765,45.67901,33.33333,81
+DevOps Engineer,Hybrid,2.1667,41.66667,33.33333,25,48
+DevOps Engineer,Remote,2.55,60,35,5,20
+Digital Marketing Specialist,Onsite,1.9074,24.07407,42.59259,33.33333,54
+Digital Marketing Specialist,Hybrid,2.1463,39.02439,36.58537,24.39024,41
+Digital Marketing Specialist,Remote,2.2083,41.66667,37.5,20.83333,24
+Executive Assistant,Onsite,1.9623,18.86792,58.49057,22.64151,53
+Executive Assistant,Hybrid,2.2222,35.55556,51.11111,13.33333,45
+Executive Assistant,Remote,2.4286,57.14286,28.57143,14.28571,21
+Financial Analyst,Onsite,1.8448,20.68966,43.10345,36.2069,58
+Financial Analyst,Hybrid,2.2895,36.84211,55.26316,7.89474,38
+Financial Analyst,Remote,2.2,45,30,25,20
+HR Manager,Onsite,2.0571,34.28571,37.14286,28.57143,70
+HR Manager,Hybrid,2.3125,47.91667,35.41667,16.66667,48
+HR Manager,Remote,2.5652,60.86957,34.78261,4.34783,23
+IT Support,Onsite,1.8939,28.78788,31.81818,39.39394,66
+IT Support,Hybrid,2.3261,41.30435,50,8.69565,46
+IT Support,Remote,2.3571,53.57143,28.57143,17.85714,28
+Marketing Specialist,Onsite,2.0735,35.29412,36.76471,27.94118,68
+Marketing Specialist,Hybrid,2.1053,28.94737,52.63158,18.42105,38
+Marketing Specialist,Remote,2.4615,61.53846,23.07692,15.38462,13
+Operations Manager,Onsite,1.9853,27.94118,42.64706,29.41176,68
+Operations Manager,Hybrid,2.0698,30.23256,46.51163,23.25581,43
+Operations Manager,Remote,2.3871,51.6129,35.48387,12.90323,31
+Product Manager,Onsite,2.082,32.78689,42.62295,24.59016,61
+Product Manager,Hybrid,2.0233,30.23256,41.86047,27.90698,43
+Product Manager,Remote,2.3793,55.17241,27.58621,17.24138,29
+Project Manager,Onsite,1.9701,25.37313,46.26866,28.35821,67
+Project Manager,Hybrid,2.2326,41.86047,39.53488,18.60465,43
+Project Manager,Remote,2.1923,30.76923,57.69231,11.53846,26
+Quality Assurance,Onsite,1.7759,17.24138,43.10345,39.65517,58
+Quality Assurance,Hybrid,2.093,34.88372,39.53488,25.5814,43
+Quality Assurance,Remote,2.1613,25.80645,64.51613,9.67742,31
+Research Scientist,Onsite,1.9375,22.5,48.75,28.75,80
+Research Scientist,Hybrid,2.175,30,57.5,12.5,40
+Research Scientist,Remote,2.3871,51.6129,35.48387,12.90323,31
+Sales Representative,Onsite,2.0172,20.68966,60.34483,18.96552,58
+Sales Representative,Hybrid,2.1765,38.23529,41.17647,20.58824,34
+Sales Representative,Remote,2.4545,59.09091,27.27273,13.63636,22
+Social Media Manager,Onsite,2.0133,29.33333,42.66667,28,75
+Social Media Manager,Hybrid,2,20.93023,58.13953,20.93023,43
+Social Media Manager,Remote,2.2692,42.30769,42.30769,15.38462,26
+Software Engineer,Onsite,2.0984,34.42623,40.98361,24.59016,61
+Software Engineer,Hybrid,2.2791,44.18605,39.53488,16.27907,43
+Software Engineer,Remote,2.2917,37.5,54.16667,8.33333,24
+Technical Writer,Onsite,2.0141,29.57746,42.25352,28.16901,71
+Technical Writer,Hybrid,2.087,30.43478,47.82609,21.73913,23
+Technical Writer,Remote,2.375,50,37.5,12.5,24
+UX Designer,Onsite,1.9254,31.34328,29.85075,38.80597,67
+UX Designer,Hybrid,2.075,27.5,52.5,20,40
+UX Designer,Remote,2.36,48,40,12,25

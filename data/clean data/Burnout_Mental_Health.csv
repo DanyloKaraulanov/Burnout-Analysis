@@ -1,0 +1,22 @@
+Burnout_Level,Mental_Health_Status,Count,Percentage
+High,Stress Disorder,129,12.3327
+High,PTSD,140,13.38432
+High,None,279,26.67304
+High,Depression,124,11.85468
+High,Burnout,119,11.37667
+High,Anxiety,136,13.00191
+High,ADHD,119,11.37667
+Low,Stress Disorder,75,10.06711
+Low,PTSD,106,14.22819
+Low,None,180,24.16107
+Low,Depression,88,11.81208
+Low,Burnout,95,12.75168
+Low,Anxiety,92,12.34899
+Low,ADHD,109,14.63087
+Medium,Stress Disorder,174,12.73792
+Medium,PTSD,177,12.95754
+Medium,None,340,24.89019
+Medium,Depression,174,12.73792
+Medium,Burnout,178,13.03075
+Medium,Anxiety,166,12.15227
+Medium,ADHD,157,11.49341
