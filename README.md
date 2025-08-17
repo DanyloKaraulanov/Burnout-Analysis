@@ -125,6 +125,8 @@ Despite remote flexibility, employees value social interaction and separation be
 ## Tableau Dashboard
 ![View Interactive Dashboard](https://public.tableau.com/app/profile/danylo.karaulanov/vizzes)
 
+---
+
 ## Recommendations
 - Develop **wellness programs** for remote employees, addressing both physical and mental health needs through accessible and flexible options.
 - Create **age-specific support**: mentorship for early-career employees, flexibility for older staff.
