@@ -135,7 +135,8 @@ WHEN 'Hybrid' THEN 2
 WHEN 'Remote' Then 3
 ELSE 4
 END,
-Avg_Burnout DESC; 
+Avg_Burnout DESC
+```
 
 More queries are avaliable in the ![sql folder](https://github.com/DanyloKaraulanov/Burnout-Analysis/tree/main/sql)
 
