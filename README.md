@@ -99,7 +99,7 @@ Across all continets, remote workers consistently face higher burnout. The data 
 ### Salary and Burnout 
 - Lower-income workers experienced more burnout:
    - $40-60K → 13.7% high burnout
-   - $120+ → 8.1% high burnout
+   - $120K+ → 8.1% high burnout
 - Higher salaries correlated with longer working hours but lower burnout.
 
 Higher income can provide resources to manage stress, improve overall well-being and reduce risk of burnout.
