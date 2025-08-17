@@ -116,8 +116,6 @@ Despite remote flexibility, employees value social interaction and separation be
 ## Sample Visuals
 ![Burnout and Mental Health by Work Arrangements](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/tableau/Burnout_and_Mental_Health_by_Work_Arrangements.png)
 
-![Burnout by Gender](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/r_images/Burnout%20by%20Gender.png)
-
 ![Burnout by Work Arrangement](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/r_images/Burnout%20by%20Work%20Arrangement.png)
 
 ![Burnout by Age](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/r_images/Burnout%20by%20Age.png)
