@@ -115,11 +115,9 @@ Despite remote flexibility, employees value social interaction and separation be
 
 ## SQL Examples
 Example query used to analyze burnout by job role:
-
+```sql
 SELECT 
-Job_Role,
-Work_Arrangement,
-AVG(CASE
+Job_Role, Work_Arrangement, AVG(CASE
 WHEN Burnout_Level = 'High' THEN 3
 WHEN Burnout_Level = 'Medium' THEN 2
 WHEN Burnout_Level = 'Low' THEN 1
@@ -139,7 +137,7 @@ ELSE 4
 END,
 Avg_Burnout DESC; 
 
-More queries are avaliable in the/sql folder.
+More queries are avaliable in the ![sql folder](https://github.com/DanyloKaraulanov/Burnout-Analysis/tree/main/sql)
 
 ---
 
