@@ -113,6 +113,21 @@ Despite remote flexibility, employees value social interaction and separation be
 
 ---
 
+## Sample Visuals
+![Burnout and Mental Health by Work Arrangements](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/tableau/Burnout_and_Mental_Health_by_Work_Arrangements.png)
+
+![Burnout by Work Arrangement](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/r_images/Burnout%20by%20Work%20Arrangement.png)
+
+![Burnout by Age](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/r_images/Burnout%20by%20Age.png)
+
+---
+
+## Tableau Dashboard
+![View Interactive Dashboard](https://public.tableau.com/app/profile/danylo.karaulanov/vizzes)
+
+---
+
+
 ## SQL Examples
 Example query used to analyze burnout by job role:
 ```sql
@@ -139,20 +154,6 @@ Avg_Burnout DESC
 ```
 
 More queries are avaliable in the ![sql folder](https://github.com/DanyloKaraulanov/Burnout-Analysis/tree/main/sql)
-
----
-
-## Sample Visuals
-![Burnout and Mental Health by Work Arrangements](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/tableau/Burnout_and_Mental_Health_by_Work_Arrangements.png)
-
-![Burnout by Work Arrangement](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/r_images/Burnout%20by%20Work%20Arrangement.png)
-
-![Burnout by Age](https://github.com/DanyloKaraulanov/Burnout-Analysis/blob/main/r_images/Burnout%20by%20Age.png)
-
----
-
-## Tableau Dashboard
-![View Interactive Dashboard](https://public.tableau.com/app/profile/danylo.karaulanov/vizzes)
 
 ---
 
