@@ -161,7 +161,7 @@ END,
 Avg_Burnout DESC
 ```
 
-More queries are avaliable in the ![sql folder](https://github.com/DanyloKaraulanov/Burnout-Analysis/tree/main/sql)
+More queries are avaliable in the [sql folder](https://github.com/DanyloKaraulanov/Burnout-Analysis/tree/main/sql)
 
 ---
 
