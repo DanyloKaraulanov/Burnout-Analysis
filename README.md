@@ -123,7 +123,11 @@ Despite remote flexibility, employees value social interaction and separation be
 ---
 
 ## Tableau Dashboard
-![View Interactive Dashboard](https://public.tableau.com/app/profile/danylo.karaulanov/vizzes)
+![Burnout and Mental Health by Work Arrangements ](https://public.tableau.com/shared/FK27W7F5R?:display_count=n&:origin=viz_share_link)
+![Correlation Between Burnout, Work Arrangement and Weekly Work Hours](https://public.tableau.com/views/CorrelationBetweenBurnoutWorkArrangementandWeeklyWorkHours/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Burnout Level by Average Weekly Working Hours](https://public.tableau.com/views/BurnoutLevelbyAverageWeeklyWorkingHours/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Work Arrangement Distribution by Age and Gender](https://public.tableau.com/views/WorkArrangementDistributionbyAgeandGender/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Average Weekly Hours by Work Arrangements](https://public.tableau.com/views/AverageWeeklyHoursbyWorkArrangements/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
